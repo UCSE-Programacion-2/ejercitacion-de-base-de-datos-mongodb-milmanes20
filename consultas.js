@@ -80,16 +80,20 @@ const buscarGrupoJ = {
 // 9. Ordenamiento (Sort): Escribe el objeto para ordenar los resultados por "rendimiento.ganados" de forma descendente (del mayor al menor).
 const ordenarPorGanados = {
   // Tu código aquí
-  'rendimiento.ganados': -1  
+ $sort: {
+'rendimiento.ganados': -1
+ }  
+  
+
 };
 
 // 10. Modificación ($set): Escribe el OPERADOR de actualización necesario para cambiar el nombre del "tecnico" a "Lionel Scaloni (Campeón)". 
 // Nota: Solo el operador, no incluyas el filtro.
 const actualizarTecnicoCampeon = {
   // Tu código aquí
-  
+   $set: {
     'tecnico': 'Lionel Scaloni (Campeón)'
-  
+   }
 
 };
 
